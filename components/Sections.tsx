@@ -1,6 +1,7 @@
 import { Icon } from "./Icon";
 import { Reveal } from "./Reveal";
 import { PhoneMockup } from "./PhoneMockup";
+import { AndresLogo } from "./AndresLogo";
 import {
   site, nav, hero, pains, steps, features, audience, differentials, pricing, faq, finalCta, whatsappLink,
 } from "@/content/site";
@@ -31,7 +32,7 @@ export function Header() {
           {nav.map((n) => <a key={n.href} href={n.href} className="hover:text-white">{n.label}</a>)}
         </nav>
         <div className="flex items-center gap-4">
-          <img src="/logo-andres-tech.png" alt="Andres Technologies" width={120} height={32} className="hidden h-7 w-auto opacity-80 lg:block" />
+          <AndresLogo className="hidden h-7 text-sm opacity-80 lg:inline-flex" />
           <a href={whatsappLink()} target="_blank" rel="noopener" className="rounded-full bg-violet-600 px-4 py-2 text-sm font-semibold text-white hover:bg-violet-500">
             Demonstração
           </a>
@@ -239,7 +240,7 @@ export function Footer() {
     <footer className="bg-[#07060d] py-14 text-violet-100/80">
       <div className={`${container} grid gap-10 md:grid-cols-3`}>
         <div>
-          <img src="/logo-andres-tech.png" alt="Andres Technologies" width={160} height={42} className="h-10 w-auto" />
+          <AndresLogo className="h-10 text-xl" />
           <p className="mt-4 text-sm">Ponto Flow é um produto Andres Technologies.</p>
         </div>
         <div>
